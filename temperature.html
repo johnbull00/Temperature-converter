@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style> rel="temperature.css"</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        
+        <div class="input-group">
+            <label for="temperature">Enter Temperature:</label>
+            <input type="text" id="temperature" placeholder="Enter a number...">
+        </div>
+        
+        <div class="conversion-type">
+            <div class="conversion-option active" data-type="celsiusToFahrenheit">Celsius to Fahrenheit</div>
+            <div class="conversion-option" data-type="fahrenheitToCelsius">Fahrenheit to Celsius</div>
+        </div>
+        
+        <button id="convert-btn">Convert</button>
+        
+        <div class="result">
+            <div class="converted-value">Enter a value to convert</div>
+            <div id="error-message" class="error-message hidden"></div>
+        </div>
+        
+        <div class="formula">
+            <p id="formula-text">Celsius to Fahrenheit: F = (9/5 × C) + 32</p>
+        </div>
+    </div>
+
+    <script> rel="temperature.js"</script>
+</body>
+</html>
